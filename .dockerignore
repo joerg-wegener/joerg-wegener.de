@@ -1,0 +1,16 @@
+/test
+
+# docker
+.dockerignore
+Dockerfile
+
+# git
+.git
+.gitignore
+
+# npm
+node_modules
+npm-debug.log
+
+# VS
+.vscode

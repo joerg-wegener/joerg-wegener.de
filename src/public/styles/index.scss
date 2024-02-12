@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #808080;
+}
+
+header.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #404040aa;
+  color: #f0f0f0;
+  padding: 4px 1rem;
+  width: 100vw;
+  height: 2rem;
+}
+
+header.page a {
+  color: white;
+  text-decoration: none;
+}
+
+span.highlight {
+  color: purple;
+}
+
+h1,
+h2 {
+  font-family: 'Lucida Console Regular';
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h2 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #dedede;
+}
+
+section {
+  padding: 1rem;
+}
+
+section div.breakout {
+}
+
+section#start {
+  font-size: 2rem;
+  color: #808080;
+  background-color: #dedede;
+  padding: 3rem 1rem 5rem 1rem;
+}
+
+section#start h1 {
+  margin: 0;
+}
+
+section#start p {
+  font-size: 1rem;
+}
+
+section#qualification {
+  background-image: url(../images/desktop.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+footer.page {
+  padding: 4px 12px;
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+  section#start {
+    font-size: 3rem;
+    padding: 5rem 2rem;
+  }
+  section#start h1 {
+    font-size: 3rem;
+  }
+  section#start p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  section#start {
+    font-size: 4rem;
+    padding: 6rem 3rem;
+  }
+  section#start h1 {
+    font-size: 4rem;
+  }
+  section#start p {
+    font-size: 2rem;
+  }
+  section div.breakout {
+    background-color: #808080;
+    margin: -100px 2rem 100px 2rem;
+    padding: 2rem;
+  }
+}

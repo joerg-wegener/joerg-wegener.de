@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.ignoreFiles": ["**/*.pug", "**/*.scss"],
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/",
+    "proxyUri": "http://localhost:80"
+  }
+}

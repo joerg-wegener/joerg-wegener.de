@@ -1,0 +1,13 @@
+version: '2.4'
+services:
+  webserver:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: dev
+    ports:
+      - '80:80'
+      - '9229:9229' # for debugging
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules

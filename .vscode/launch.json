@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Program",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "dev"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_modules>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Docker: Attach to Node",
+      "type": "node",
+      "request": "attach",
+      "remoteRoot": "/usr/src/app/src/",
+      "port": 9229,
+      "address": "localhost",
+      "localRoot": "${workspaceFolder}/src/",
+      "restart": true
+    }
+  ]
+}
