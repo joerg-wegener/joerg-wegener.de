@@ -26,10 +26,20 @@ block content
         br
         | aus Leidenschaft
 
+    section(id="person")
+      h2 Person
+      p
+        | Mein Name ist Jörg und ich arbeite seit 25 Jahren 
+        | in der IT. Ich bringe Erfahrung aus größeren und kleineren 
+        | Projekten mit.
+      p Wohnort: Düsseldorf
+      p Alter: 46 Jahre
+      a(href="#contact") Kontaktiere mich
+
     section(id="qualification")
       div.breakout
         h2 Qualifikationen
-        p C#, JavaScript, Rust, LUA, CUDA
+        p C#, JavaScript, LUA
         p .net, NodeJS
         p Docker, Kubernetes, Test Container
         p Azure Cloud, Web Frontend, Desktop Apps, Konsole
@@ -40,20 +50,48 @@ block content
         p bash, zsh, tmux
         p Webpack, Vite, CSS, SASS
         p git, GitHub, Azure DevOps
-        p Application Insight, Grafana, Prometheus
+        p Application Insights, Grafana, Prometheus
         p <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
 
     section(id="experience")
       h2 Erfahrungen
       p Zeitstrahl
-      p
-        | Zertifikate?
-        | 2024 jetzt
-        | 2015 verheiratet
-        | 2008 Buch
-        | 2007 Selbstänidigkeit
-        | 2004 Studium
-      p <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+      ul.timeline
+        li
+          span.time 2024
+          span.label
+            | jetzt<br>
+            | Haben Sie die nächste, spannende Herausforderung für mich?
+        li
+          span.time 2015
+          span.label
+            | verheiratet<br>
+            | Mit der besten Frau, die man sich wünschen kann
+        li
+          span.time 2008
+          span.label
+            | Buch<br>
+            | Wer weiß, wer weiß
+        li
+          span.time 2007
+          span.label
+            | Selbstänidigkeit<br>
+            | Neue spannenede Herausforderungen im Web, Desktop und Server-Umfeld
+        li
+          span.time 2004
+          span.label
+            | Studium<br>
+            | Nebenberuflich und viel Engagement
+        li
+          span.time 1998
+          span.label
+            | Angesteller<br>
+            | First Level Support und Aufbau des Firmen Intranets
+        li
+          span.time 1996
+          span.label
+            | Ausbildung<br>
+            | Grundstein für meine berufliche Karriere
 
     section(id="portfolio")
       p
