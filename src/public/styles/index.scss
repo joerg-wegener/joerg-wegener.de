@@ -20,6 +20,7 @@ header.page {
   padding: 4px 1rem;
   width: 100vw;
   height: 2rem;
+  z-index: 1000;
 }
 
 header.page a {
@@ -49,6 +50,11 @@ h2 {
   padding: 0.5rem 1rem;
   background-color: black;
   color: #dedede;
+}
+
+h2::after {
+  content: '.';
+  color: purple;
 }
 
 section {

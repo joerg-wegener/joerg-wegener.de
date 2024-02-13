@@ -5,10 +5,9 @@ div.timeline {
 }
 
 div.container {
-  margin: 1rem 0;
-  padding: 10px 50px;
+  margin: 2rem 0;
   position: relative;
-  width: 50%;
+  width: 100%;
 
   span.time {
     position: absolute;
@@ -20,22 +19,9 @@ div.container {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    right: -2rem;
-    top: 1rem;
-  }
-}
-
-div.container.left {
-  padding-right: 2rem;
-  left: 0;
-}
-
-div.container.right {
-  left: 50%;
-  padding-left: 2rem;
-
-  span.time {
-    left: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.5rem;
   }
 }
 
@@ -56,11 +42,48 @@ div.text-box {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 2px;
   height: 100%;
   background-color: #fff;
   top: 0;
   left: 50%;
   margin-left: -3px;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  div.container {
+    width: 50%;
+
+    div.text-box {
+      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    span.time {
+      top: -0.5rem;
+      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+      transform: none;
+    }
+  }
+
+  div.container:nth-of-type(odd) {
+    padding-right: 3rem;
+    left: inherit;
+    text-align: right;
+
+    span.time {
+      left: inherit;
+      right: -2rem;
+    }
+  }
+  
+  div.container:nth-of-type(even) {
+    left: 50%;
+    padding-left: 3rem;
+  
+    span.time {
+      right: inherit;
+      left: -2rem;
+    }
+  }
 }
