@@ -20,15 +20,6 @@ jobs:
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./.github/workflows/main.bicep
           failOnStdErr: false
-      - name: Retrieve Current Configuration
-        run: echo "SWA_HOSTNAME=$(az staticwebapp show --name SWeb-JoergWegenerWeb-PROD --query defaultHostname)"
-      - name: Configure Infrastructure
-        uses: azure/arm-deploy@v1
-        with:
-          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-          resourceGroupName: ${{ secrets.AZURE_RG }}
-          template: ./.github/workflows/connections.bicep
-          failOnStdErr: false
       - name: Deploy Website
         uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9
         with:
