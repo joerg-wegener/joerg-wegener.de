@@ -2,6 +2,11 @@ param name string = 'SWeb-JoergWegenerWeb-PROD'
 param location string = 'West Europe'
 param domain string = 'joerg-wegener.de'
 
+resource zone 'Microsoft.Network/dnsZones@2018-05-01' = {
+  name: domain
+  location: 'global'
+}
+
 resource staticWebApplication 'Microsoft.Web/staticSites@2022-09-01' = {
   name: name
   location: location
@@ -17,12 +22,7 @@ resource staticWebApplication 'Microsoft.Web/staticSites@2022-09-01' = {
   tags: resourceGroup().tags
 }
 
-// resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
-//   name: 'joerg-wegener.de'
-//   parent: staticwebApplication
-// }
-
-resource zone 'Microsoft.Network/dnsZones@2018-05-01' = {
-  name: domain
-  location: 'global'
+resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
+  name: 'www.${domain}'
+  parent: staticWebApplication
 }
