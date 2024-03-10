@@ -1,4 +1,4 @@
-param name string = 'SWeb-JoergwegenerWeb-PROD'
+param name string = 'SWeb-JoergWegenerWeb-PROD'
 param location string = 'West Europe'
 param domain string = 'joerg-wegener.de'
 
