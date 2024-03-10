@@ -7,8 +7,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "AzureRG = '$AZURE_RG'"
       - name: Checkout code
         uses: actions/checkout@main
       - name: Log into Azure
@@ -19,6 +17,6 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-          resourceGroupName: ${{ env.AZURE_RG }}
+          resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./.github/workflows/main.bicep
           failOnStdErr: false
