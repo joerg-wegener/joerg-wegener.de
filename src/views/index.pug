@@ -1,14 +1,17 @@
 extends layouts/main.pug
 
+block head
+  title="Jörg Wegener"
+
 block content
-  header.page(id="header")
+  header.page#header
     a(href="#qualification")  Qualifikationen
     a(href="#experience")  Erfahrung
     a(href="#portfolio")  Portfolio
     a(href="#contact")  Kontakt
 
   main
-    section(id="start")
+    section#start
       h1
         | Ich 
         span.highlight /
@@ -23,7 +26,7 @@ block content
         br
         | aus Leidenschaft
 
-    section(id="person")
+    section#person
       h2 Person
       p
         | Mein Name ist Jörg und ich arbeite seit 25 Jahren 
@@ -33,7 +36,7 @@ block content
       p Alter: 46 Jahre
       a(href="#contact") Kontaktiere mich
 
-    section(id="qualification")
+    section#qualification
       div.breakout
         h2 Qualifikationen
         p C#, JavaScript, LUA
@@ -50,7 +53,7 @@ block content
         p Application Insights, Grafana, Prometheus
         p <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
 
-    section(id="experience")
+    section#experience
       h2 Erfahrungen
       div.timeline
         div.container.left
@@ -91,17 +94,17 @@ block content
             p Grundstein für meine berufliche Karriere
           span.time 1996
 
-    section(id="portfolio")
+    section#portfolio
       p
         | EnBW
         | Yello
         | ROWA
         | Jenoptik
 
-    section(id="contact")
+    section#contact
       h2 Kontakt
 
-    section(id="imprint")
+    section#imprint
       h2 Impressum
       p
         | Jörg Wegener
