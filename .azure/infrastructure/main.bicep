@@ -1,9 +1,11 @@
-param name string = 'SWeb-JoergWegenerWeb-PROD'
+param name string = 'SWeb-JoergWegenerWeb'
 param location string = 'West Europe'
 param domain string = 'joerg-wegener.de'
 
+var staticWebApplicationName = '${name}-${uniqueString(resourceGroup().id)}-PROD'
+
 resource staticWebApplication 'Microsoft.Web/staticSites@2022-09-01' = {
-  name: name
+  name: staticWebApplicationName
   location: location
   properties:{
     stagingEnvironmentPolicy: 'Enabled'
@@ -37,3 +39,5 @@ resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@202
   name: 'www.${domain}'
   parent: staticWebApplication
 }
+
+output staticWebApplicationName string = staticWebApplicationName
