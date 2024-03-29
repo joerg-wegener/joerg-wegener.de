@@ -4,7 +4,7 @@ import createServer from './createServer.js'
 
 const app = createServer()
 
-const server = app.listen('8000', () => {
+const server = app.listen('80', () => {
   console.log('Application started...')
 })
 
