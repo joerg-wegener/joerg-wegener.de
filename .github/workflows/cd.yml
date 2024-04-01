@@ -9,6 +9,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@main
+      # Branch Protection
+      # Linting
+      # Build
+      # Unit Tests / Code Coverage
+      # Integration Tests
+      # Release
       - name: Log into Azure
         uses: azure/login@v1
         with:
