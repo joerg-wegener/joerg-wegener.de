@@ -36,6 +36,11 @@ resource cnameRecord 'Microsoft.Network/dnsZones/CNAME@2018-05-01' = {
 }
 
 resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
+  name: domain
+  parent: staticWebApplication
+}
+
+resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
   name: 'www.${domain}'
   parent: staticWebApplication
 }
