@@ -35,7 +35,7 @@ jobs:
           app_location: './'
           api_location: 'api'
           output_location: 'dist'
-          deployment_environment: 'qa'
+          # deployment_environment: 'qa'
           app_build_command: 'npm run build'
           # skip_app_build: true
           # api_build_command
