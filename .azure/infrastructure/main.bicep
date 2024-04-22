@@ -40,7 +40,7 @@ resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@202
   parent: staticWebApplication
 }
 
-resource staticwebApplicationDomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
+resource staticwebApplicationSubdomain 'Microsoft.Web/staticSites/customDomains@2022-03-01' = {
   name: 'www.${domain}'
   parent: staticWebApplication
 }
