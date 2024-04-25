@@ -117,14 +117,31 @@ section#start p {
 }
 
 section#qualification {
-  background-image: url(../images/desktop.jpg);
-  background-size: cover;
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      margin: 12px 0;
+    }
+  }
 }
 
 footer.page {
-  padding: 4px 12px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  h2 {
+    padding: 0;
+  }
+
+  div:first-of-type {
+  }
 }
 
 @media (min-width: 480px) {
