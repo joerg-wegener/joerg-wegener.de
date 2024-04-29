@@ -132,9 +132,9 @@ section#qualification {
 
     div {
       width: 100%;
-      padding: 3rem 0;
+      padding: 1rem 0;
 
-      i.fas {
+      i.fa-solid {
         color: purple;
         display: block;
         width: 33%;
@@ -147,6 +147,12 @@ section#qualification {
 
       @media (min-width: 768px) {
         width: 33%;
+        padding: 3rem 0;
+
+        i.fa-solid {
+          font-size: 45px;
+          border-bottom: 4px solid purple;
+        }
       }
     }
   }
