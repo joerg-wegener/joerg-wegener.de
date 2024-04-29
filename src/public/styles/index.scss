@@ -124,6 +124,32 @@ section#qualification {
       margin: 12px 0;
     }
   }
+
+  div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      width: 100%;
+      padding: 3rem 0;
+
+      i.fas {
+        color: purple;
+        display: block;
+        width: 33%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        font-size: 30px;
+        border-bottom: 2px solid purple;
+      }
+
+      @media (min-width: 768px) {
+        width: 33%;
+      }
+    }
+  }
 }
 
 footer.page {

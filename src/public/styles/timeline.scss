@@ -2,40 +2,40 @@ div.timeline {
   position: relative;
   max-width: 1200px;
   margin: 100px auto;
-}
 
-div.container {
-  margin: 2rem 0;
-  position: relative;
-  width: 100%;
+  div.container {
+    margin: 2rem 0;
+    position: relative;
+    width: 100%;
 
-  span.time {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 1px solid #808080;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -1.5rem;
+    span.time {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 1px solid #808080;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -1.5rem;
+    }
   }
-}
 
-div.text-box {
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  position: relative;
-  border-radius: 0.5rem;
-  background-color: #fff;
-
-  h3 {
-    font-weight: bold;
+  div.text-box {
     font-size: 1rem;
-    margin: 0;
+    padding: 1rem 1.5rem;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: #fff;
+
+    h3 {
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0;
+    }
   }
 }
 
@@ -52,38 +52,40 @@ div.text-box {
 }
 
 @media screen and (min-width: 768px) {
-  div.container {
-    width: 50%;
+  div.timeline {
+    div.container {
+      width: 50%;
 
-    div.text-box {
-      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+      div.text-box {
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      span.time {
+        top: -0.5rem;
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+        transform: none;
+      }
     }
 
-    span.time {
-      top: -0.5rem;
-      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
-      transform: none;
-    }
-  }
-
-  div.container:nth-of-type(odd) {
-    padding-right: 3rem;
-    left: inherit;
-    text-align: right;
-
-    span.time {
+    div.container:nth-of-type(odd) {
+      padding-right: 3rem;
       left: inherit;
-      right: -2rem;
+      text-align: right;
+
+      span.time {
+        left: inherit;
+        right: -2rem;
+      }
     }
-  }
-  
-  div.container:nth-of-type(even) {
-    left: 50%;
-    padding-left: 3rem;
-  
-    span.time {
-      right: inherit;
-      left: -2rem;
+
+    div.container:nth-of-type(even) {
+      left: 50%;
+      padding-left: 3rem;
+
+      span.time {
+        right: inherit;
+        left: -2rem;
+      }
     }
   }
 }
