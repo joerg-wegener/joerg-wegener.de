@@ -1,0 +1,12 @@
+div#cookie-consent {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  background-color: red;
+  padding: 5rem;
+
+  &.active {
+    display: block;
+  }
+}
