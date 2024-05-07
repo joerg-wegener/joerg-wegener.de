@@ -78,7 +78,7 @@ section {
 button {
   background: #404040;
   color: white;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 2rem;
   border: none;
   border-radius: 2rem;
   margin: 0 0.25rem 0 0;
@@ -87,6 +87,7 @@ button {
 section#start {
   position: relative;
   font-size: 2rem;
+  letter-spacing: 0.1rem;
   color: #ddd;
   background-color: #dedede;
   padding: 7rem 2rem;
@@ -105,7 +106,6 @@ section#start::before {
   left: 0;
   width: 100%;
   height: 100%;
-  /* https://www.shutterstock.com/de/image-photo/middle-aged-hispanic-business-manager-ceo-2305776359 */
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.6) 0 50%,
       rgba(0, 0, 0, 0) 100%);
@@ -139,6 +139,8 @@ section#qualification {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 
     div {
       width: 100%;
