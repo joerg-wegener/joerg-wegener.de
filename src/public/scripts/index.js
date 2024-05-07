@@ -28,13 +28,13 @@ function checkCookieConsent() {
 }
 
 function acceptNecessaryCookies() {
-  console.log('necessary cookies accepted')
+  localStorage.setItem(LS_COOKIECONSENT_KEY, 'necessary')
   var cookieConsentElement = document.getElementById('cookie-consent')
   cookieConsentElement.classList.remove('active')
 }
 
 function accecptAllCookies() {
-  console.log('all cookies accepted')
+  localStorage.setItem(LS_COOKIECONSENT_KEY, 'all')
   var cookieConsentElement = document.getElementById('cookie-consent')
   cookieConsentElement.classList.remove('active')
 }

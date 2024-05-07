@@ -17,7 +17,7 @@ header.page {
   top: 0;
   left: 0;
   background-color: #202020;
-  color: #f0f0f0;
+  color: white;
   width: 100vw;
   z-index: 1000;
   display: flex;
@@ -75,10 +75,19 @@ section {
   padding: 1rem;
 }
 
+button {
+  background: #404040;
+  color: white;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 0 0.25rem 0 0;
+}
+
 section#start {
   position: relative;
   font-size: 2rem;
-  color: #aaa;
+  color: #ddd;
   background-color: #dedede;
   padding: 7rem 2rem;
   height: 100vh;
