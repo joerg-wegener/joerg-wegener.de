@@ -1,9 +1,13 @@
-extends layouts/main.pug
+extends ../layouts/main.pug
 
 block head
   title="Jörg Wegener"
+  //link(href=require('../components/hero/index.scss') rel='stylesheet')
+  //link(href=require('../components/person/index.scss') rel='stylesheet')
+  //link(href=require('../components/qualification/index.scss') rel='stylesheet')
 
 block content
+  script(src=require('./index.js') defer='defer')
   header.page#header
     a(href="#qualification")  Qualifikationen
     a(href="#experience")  Erfahrung
@@ -11,68 +15,9 @@ block content
     a(href="#contact")  Kontakt
 
   main
-    section#start
-      h1
-        | Ich 
-        span.highlight /
-        | bin
-        br
-        | Jörg
-        br
-        | Wegener
-        span.highlight .
-      p
-        | Software Entwickler
-        br
-        | aus Leidenschaft
-
-    section#person
-      h2 Person
-      p
-        | Mein Name ist Jörg Wegener und ich arbeite seit mehr als 25 Jahren 
-        | in der IT. Ich bringe Erfahrung aus größeren und kleineren Projekten
-        | mit.
-      p
-        | Aber viel wichtiger: Ich bringe Interesse an Neuem und Engagement mit.
-      p Wohnort: Düsseldorf
-      p Alter: 46 Jahre
-      a(href="#contact") Mich kontaktieren
-
-    section#qualification
-      h2 Qualifikationen
-      div.container
-        //- Coding
-        div
-          i.fa-solid.fa-file-code
-          ul
-            li C#, JavaScript, LUA
-            li .net, NodeJS
-        //- Frontend
-        div
-          i.fa-solid.fa-leaf
-          ul
-            li Webpack, Vite, CSS, SASS
-            li WPF, Vue.js
-        //- Backend
-        div
-          i.fa-solid.fa-database
-          ul
-            li Azure Service Bus, RabbitMQ
-            li MS SQL Server, Azure CosmosDB, Mongo DB, Redis
-            li REST, gRPC, WebSockets, GraphQL
-        //- Cloud
-        div
-          i.fa-solid.fa-cubes
-          ul
-            li Azure Cloud, Web Frontend, Desktop Apps, Konsole
-            li Docker, Kubernetes, Test Container
-        //- DevOps
-        div
-          i.fa-solid.fa-code-compare
-          ul
-            li git, GitHub, Azure DevOps
-            li Application Insights, Grafana, Prometheus
-            li bash, zsh, tmux
+    include ../components/hero/index.pug
+    include ../components/person/index.pug
+    include ../components/qualification/index.pug
 
     section#experience
       h2 Erfahrungen
