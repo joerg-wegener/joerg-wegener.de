@@ -2,7 +2,7 @@
   "name": "joerg-wegener.de",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "dev": "webpack --config webpack.dev.config.js --watch",

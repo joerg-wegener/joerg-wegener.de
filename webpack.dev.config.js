@@ -5,7 +5,7 @@ import NodemonPlugin from 'nodemon-webpack-plugin'
 
 export default {
   entry: {
-    index: './src/views/index.pug',
+    index: './src/pages/index.pug',
   },
   output: {
     filename: 'bundle.js',
@@ -25,9 +25,9 @@ export default {
       },
     }),
     new NodemonPlugin({
-      script: './src/app.js',
+      script: './app.js',
       nodeArgs: ['--inspect=0.0.0.0:9229'],
-      ignore: ['./src/public/**.*'],
+      ignore: ['./src/**.*'],
       watch: path.join(path.dirname(url.fileURLToPath(import.meta.url)), 'src'),
     }),
   ],
