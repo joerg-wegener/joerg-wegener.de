@@ -8,3 +8,5 @@ const appInsights = new ApplicationInsights({
 })
 appInsights.loadAppInsights()
 appInsights.trackPageView()
+
+throw new Error('Test')
