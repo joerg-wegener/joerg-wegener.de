@@ -6,7 +6,7 @@ services:
       context: .
       target: dev
     ports:
-      - '80:80'
+      - '8000:80'
       - '9229:9229' # for debugging
     volumes:
       - .:/usr/src/app
