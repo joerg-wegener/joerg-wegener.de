@@ -8,7 +8,7 @@
     "dev": "webpack --config webpack.dev.config.js --watch",
     "dev:test": "node --watch --test test/unittests/*.test.js",
     "build": "webpack --config webpack.dev.config.js",
-    "start": "node ./src/app.js",
+    "start": "node ./app.js",
     "test": "node --test"
   },
   "keywords": [],
