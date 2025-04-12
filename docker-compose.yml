@@ -9,5 +9,7 @@ services:
       - '8000:80'
       - '9229:9229' # for debugging
     volumes:
-      - .:/usr/src/app
+      - .:/usr/src/app:rw,Z
       - /usr/src/app/node_modules
+    networks:
+      - bridge
