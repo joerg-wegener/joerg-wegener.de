@@ -11,5 +11,3 @@ services:
     volumes:
       - .:/usr/src/app:rw,Z
       - /usr/src/app/node_modules
-    networks:
-      - bridge
