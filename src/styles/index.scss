@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:wght@500;display=swap');
 @import url('./timeline.scss');
 
 * {
@@ -78,6 +78,17 @@ h2::after {
 
 section {
   padding: 1rem;
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
 footer.page {
