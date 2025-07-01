@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:wght@500&display=swap');
 @import url('./timeline.scss');
 
 * {
@@ -9,6 +10,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #808080;
+  border: 8px solid purple;
+  border-bottom: none;
 }
 
 header.page {
@@ -47,7 +50,11 @@ span.highlight {
 
 h1,
 h2 {
-  font-family: 'Lucida Console Regular';
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdt" 100;
 }
 
 h1 {
@@ -61,13 +68,12 @@ h2 {
 h2 {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: black;
+  background-color: purple;
   color: #dedede;
 }
 
 h2::after {
-  content: '.';
-  color: purple;
+  content: ' >';
 }
 
 section {
