@@ -1,0 +1,15 @@
+{
+  "name": "identage-infrastructure",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "remoteUser": "developer",
+
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.zshrc,target=/home/developer/.zshrc,readonly,type=bind",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.config/zshrc,target=/home/developer/.config/zshrc,readonly,type=bind",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.pi,target=/home/developer/.pi,type=bind"
+  ]
+}
