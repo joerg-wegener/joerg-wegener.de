@@ -1,25 +1,20 @@
-# jörg-wegener.de
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-Persönliche statische Website-Profil mit Vanilla HTML5, CSS3 und ES6+.
+# Run and deploy your AI Studio app
 
-## Ordnerstruktur
+This contains everything you need to run your app locally.
 
-```
-.
-├── index.html
-├── README.md
-├── style.css
-└── script.js
-```
+View your app in AI Studio: https://ai.studio/apps/edfe0afe-dbc7-4ee9-a4d1-b65260916c2d
 
-## Technologien
+## Run Locally
 
-- HTML5
-- CSS3 (keine Inline-Styles)
-- JavaScript (ES6+, Modulkonzept)
+**Prerequisites:**  Node.js
 
-## Features
 
-- Responsives Layout (mindestens mobile-freundlich)
-- Barrierefreiheit (ARIA-Labels bei Skripten)
-- Minimalistisches Design ohne externe Frameworks
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Software Entwickler Profil</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Hi, ich bin <span class="hero__highlight">Jörg Wegener</span></h1>
+          <p class="hero__subtitle">Software Entwickler mit Fokus auf skalierbare Architektur, sauberen Code und intuitive Benutzererlebnisse.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Kontakt aufnehmen</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/joerg-wegener" class="social-links__item" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/@joergw" class="social-links__item" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://bsky.app/profile/joergwegener.bsky.social" class="social-links__item" aria-label="BlueSky" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <!-- Platzhalter für freigestelltes Bild einer Person -->
+          <!--<img class="hero__image" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&h=600&auto=format&fit=crop" alt="Jörg Wegener" referrerpolicy="no-referrer" />-->
+          <img class="hero__image" src="joerg-wegener.jpeg" alt="Jörg Wegener" />
+          <div class="hero__shape-bg"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section__container">
+          <h2 class="section__title">Hervorgehobene Projekte</h2>
+          <div class="projects__grid">
+            <article class="card project-card">
+              <p>
+                <span class="time">2026</span>
+              </p>
+              <h3 class="project-card__title">Event-Driven Integration</h3>
+              <p class="project-card__text">Ein modulares Werkzeug zur Bereitstellung hybrider Cloud-Umgebungen mit einem einzigen Klick. Reduzierte die Setup-Zeit für Entwickler um 80%. Ein modulares Werkzeug zur Bereitstellung hybrider Cloud-Umgebungen mit einem einzigen Klick. Reduzierte die Setup-Zeit für Entwickler um 80%.</p>
+              <p>
+                <span class="tag">.net</span>
+              </p>
+            </article>
+            <article class="card project-card">
+              <p>
+                <span class="time">2018</span>
+              </p>
+              <h3 class="project-card__title">Vertriebswebsite</h3>
+              <p class="project-card__text">Web-basierte Plattform für synchrone Bearbeitung von Code-Snippets und Architektur-Diagrammen, genutzt von über 10.000 Teams.</p>
+              <p>
+                <span class="tag">.net</span>
+              </p>
+            </article>
+            <article class="card project-card">
+              <p>
+                <span class="time">2025</span>
+              </p>
+              <h3 class="project-card__title">Desktop Anwendung</h3>
+              <p class="project-card__text">Hochverfügbares API-Gateway für die Verarbeitung kritischer Zahlungstransaktionen mit minimaler Latenz und höchster Sicherheit.</p>
+              <p>
+                <span class="tag">.net</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tech-stack">
+        <div class="section__container">
+          <h2 class="section__title">Technologien</h2>
+          <div class="tech-stack__grid">
+            <div class="card tech-group">
+              <div class="tech-group__icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="tech-group__title">Hosting</h3>
+              <ul class="tech-group__list">
+                <li class="tech-group__item">Cloud, On Prem</li>
+                <li class="tech-group__item">Docker, podman, Kubernetes</li>
+                <li class="tech-group__item">Application Insight, Prometheus</li>
+                <li class="tech-group__item">Web, Desktop, Konsole</li>
+              </ul>
+            </div>
+            <div class="card tech-group">
+              <div class="tech-group__icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="tech-group__title">AI Tools</h3>
+              <ul class="tech-group__list">
+                <li class="tech-group__item">Anthropic, ollama, groq</li>
+                <li class="tech-group__item">Claude Code, Open Code, pi.dev</li>
+                <li class="tech-group__item">PyTorch</li>
+                <li class="tech-group__item">&nbsp;</li>
+              </ul>
+            </div>
+            <div class="card tech-group">
+              <div class="tech-group__icon"><i class="fa-solid fa-gears"></i></div>
+              <h3 class="tech-group__title">Automatisierungen</h3>
+              <ul class="tech-group__list">
+                <li class="tech-group__item">bicep, terraform, ansible</li>
+                <li class="tech-group__item">GitHub Actions</li>
+                <li class="tech-group__item">temporal, n8n</li>
+                <li class="tech-group__item">&nbsp;</li>
+              </ul>
+            </div>
+            <div class="card tech-group">
+              <div class="tech-group__icon"><i class="fa-solid fa-cloud"></i></div>
+              <h3 class="tech-group__title">Cloud Dienste</h3>
+              <ul class="tech-group__list">
+                <li class="tech-group__item">Azure, Hetzner</li>
+                <li class="tech-group__item">SQL Server, CosmosDB, MongoDB, Redis</li>
+                <li class="tech-group__item">REST, gRPC, WebSockets, SSE, GraphQL</li>
+                <li class="tech-group__item">kafka, RabbitMQ</li>
+              </ul>
+            </div>
+            <div class="card tech-group">
+              <div class="tech-group__icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="tech-group__title">Programmiersprachen</h3>
+              <ul class="tech-group__list">
+                <li class="tech-group__item">C#</li>
+                <li class="tech-group__item">python</li>
+                <li class="tech-group__item">rust</li>
+                <li class="tech-group__item">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__container">
+          <div class="contact__info">
+            <h2 class="contact__title">Bereit für etwas Neues?</h2>
+            <p class="contact__text">Egal ob konkretes Projekt oder einfach nur zum Netzwerken – ich freue mich über jede Nachricht und antworte in der Regel innerhalb von 24 Stunden.</p>
+          </div>
+          <form class="form contact__form">
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" class="form__input" placeholder="Dein Name">
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">E-Mail</label>
+              <input type="email" id="email" class="form__input" placeholder="mail@beispiel.de">
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Nachricht</label>
+              <textarea id="message" class="form__textarea" rows="5" placeholder="Wie kann ich weiterhelfen?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Nachricht senden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__info">
+            <p class="footer__heading">Verantwortlich für den Inhalt</p>
+            <address class="footer__address">
+              Jörg Wegener<br>
+              Röpkestr. 13<br>
+              40235 Düsseldorf<br>
+              Deutschland
+            </address>
+          </div>
+          <div class="footer__info">
+            <p class="footer__heading">Kontakt</p>
+            <p class="footer__contact-item"><i class="fa-regular fa-envelope"></i> <a href="mailto:hallo@example.com">info@identage.com</a></p>
+            <p class="footer__contact-item"><i class="fa-solid fa-phone"></i>+49 172 2032594</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Jörg Wegener. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

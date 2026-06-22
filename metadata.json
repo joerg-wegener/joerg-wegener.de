@@ -1,0 +1,6 @@
+{
+  "name": "Static Profile Site",
+  "description": "Static personal profile website for a software developer using HTML and custom CSS with BEM notation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
