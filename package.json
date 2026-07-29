@@ -1,7 +1,7 @@
 {
   "name": "joerg-wegener.de",
   "version": "0.0.0",
-  "scripts": {},
+  "scripts": { "build": ":" },
   "private": true,
   "dependencies": {
     "http-server": "^14.1.1"
